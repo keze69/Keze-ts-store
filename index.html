@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Keze TS Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="logo">Keze <span>TS</span> Store</div>
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Modern Dark • Neon Clothing</h1>
+    <p>9 exclusive mockup items — shirts, hoodies & streetwear. Mobile-friendly & ready to upload.</p>
+    <a class="cta" href="#shop">Shop Now</a>
+  </section>
+
+  <section id="shop" class="shop">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="products-grid">
+      <!-- 9 product cards -->
+      
+<div class="card" data-id="1" data-price="799">
+  <div class="imgwrap">
+    <img src="images/product1.svg" alt="Product 1">
+  </div>
+  <h3 class="pname">Neon Tee — Aurora</h3>
+  <div class="price">₹799</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="2" data-price="1499">
+  <div class="imgwrap">
+    <img src="images/product2.svg" alt="Product 2">
+  </div>
+  <h3 class="pname">Glow Hoodie — Midnight</h3>
+  <div class="price">₹1499</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="3" data-price="2199">
+  <div class="imgwrap">
+    <img src="images/product3.svg" alt="Product 3">
+  </div>
+  <h3 class="pname">Pixel Jacket — Chrome</h3>
+  <div class="price">₹2199</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="4" data-price="899">
+  <div class="imgwrap">
+    <img src="images/product4.svg" alt="Product 4">
+  </div>
+  <h3 class="pname">Street Tee — Vapor</h3>
+  <div class="price">₹899</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="5" data-price="749">
+  <div class="imgwrap">
+    <img src="images/product5.svg" alt="Product 5">
+  </div>
+  <h3 class="pname">Cropped Tee — Prism</h3>
+  <div class="price">₹749</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="6" data-price="1599">
+  <div class="imgwrap">
+    <img src="images/product6.svg" alt="Product 6">
+  </div>
+  <h3 class="pname">Oversize Hoodie — Nova</h3>
+  <div class="price">₹1599</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="7" data-price="699">
+  <div class="imgwrap">
+    <img src="images/product7.svg" alt="Product 7">
+  </div>
+  <h3 class="pname">Ringer Tee — Echo</h3>
+  <div class="price">₹699</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="8" data-price="1799">
+  <div class="imgwrap">
+    <img src="images/product8.svg" alt="Product 8">
+  </div>
+  <h3 class="pname">Windbreaker — Flux</h3>
+  <div class="price">₹1799</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+
+<div class="card" data-id="9" data-price="999">
+  <div class="imgwrap">
+    <img src="images/product9.svg" alt="Product 9">
+  </div>
+  <h3 class="pname">Longline Tee — Pulse</h3>
+  <div class="price">₹999</div>
+  <div class="actions">
+    <button class="btn add-to-cart">Add to cart</button>
+    <button class="btn view">View</button>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Keze TS Store</h2>
+    <p>Keze TS Store is a demo storefront created to show a modern dark theme with neon accents. This build uses demo images and a fake GPay button for showcase purposes only.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <form id="contactForm">
+      <label>Name<input type="text" id="name" required></label>
+      <label>Email<input type="email" id="email" required></label>
+      <label>Message<textarea id="message" rows="3"></textarea></label>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+</main>
+
+<!-- cart + checkout modal -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <button class="close" id="closeCart">✕</button>
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <div class="cart-total">Total: <span id="cartTotal">₹0.00</span></div>
+    <button id="gpayBtn" class="gpay">Pay with GPay (demo)</button>
+  </div>
+</div>
+
+<button id="cartToggle" title="Open cart">🛒</button>
+
+<script src="script.js"></script>
+</body>
+</html>
