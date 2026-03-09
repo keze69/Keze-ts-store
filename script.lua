@@ -1,4 +1,4 @@
-local player = game.Players.LocalPlayer
+end= game.Players.LocalPlayer
 local autoJump = false
 local jumpDelay = 5
 
@@ -138,14 +138,19 @@ UIS.InputChanged:Connect(function(input)
     end
 end)
 
--- Auto jump loop
+-- Auto jump Auto
 task.spawn(function()
     while true do
         if autoJump then
+            local player = game.Players.LocalPlayer
             local character = player.Character or player.CharacterAdded:Wait()
-            local humanoid = character:WaitForChild("Humanoid")
-            humanoid.Jump = true
+            local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+            if humanoid then
+                humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            end
         end
-        task.wait(jumpDelay)
+
+        task.wait(5) -- jump every 5 seconds
     end
 end)
